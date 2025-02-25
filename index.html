@@ -119,126 +119,69 @@
     <div class="custom__cursor__inner"></div>
     <div class="wrapper">
       <nav class="mt-4">
-        <div class="mx-auto">
-          <div class="flex">
-            <div class="flex wrapper justify-between px-4 py-4">
-              <div class="md:hidden md:flex items-center space-x-1">
-                <a href="#work" class="caption py-4 px-2"><span>Work</span></a>
-                <a href="about.html" class="caption py-4 px-2"
-                  ><span>About</span></a
-                >
-                <a href="contact.html" class="caption py-4 px-2"
-                  ><span>Contact</span></a
-                >
-              </div>
+            <div class="mx-auto">
+                <div class="flex">
+                    <div class="flex wrapper justify-between px-4 py-4">
+                        <div class="hidden md:flex items-center space-x-1">
+                            <a href="index.html" class="caption py-4 px-2"><span>Work</span></a>
+                            <a href="about.html" class="caption py-4 px-2"><span>About</span></a>
+                            <a href="contact.html" class="caption py-4 px-2"><span>Contact</span></a>
+                        </div>
 
-              <!-- Primary Navbar items -->
-              <div class="md:flex items-center space-x-1">
-                <a href="index.html" class="flex items-center logo">
-                  <img src="./res/icons/logo.svg" alt="" draggable="false" />
-                </a>
-              </div>
+                        <!-- Primary Navbar items -->
+                        <div class="md:flex items-center space-x-1">
+                            <a href="index.html" class="flex items-center">
+                                <img src="./res/icons/logo.svg" alt="" draggable="false">
+                            </a>
+                        </div>
 
-              <div class="md:hidden md:flex items-center">
-                <span
-                  class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
-                >
-                  <ul class="flex items-center">
-                    <a
-                      class="ml-5"
-                      href="https://www.behance.net/uxrishu"
-                      target="_blank"
-                    >
-                      <span class="social text-xl"
-                        ><i class="fa-brands fa-behance"></i
-                      ></span>
-                    </a>
-                    <a
-                      class="ml-5"
-                      href="https://www.linkedin.com/in/uxrishu/"
-                      target="_blank"
-                    >
-                      <span class="social text-xl"
-                        ><i class="fa-brands fa-linkedin-in"></i>
-                      </span>
-                    </a>
-                    <a
-                      class="ml-5"
-                      href="https://github.com/uxrishu"
-                      target="_blank"
-                    >
-                      <span class="social text-xl"
-                        ><i class="fa-brands fa-github"></i
-                      ></span>
-                    </a>
-                  </ul>
-                </span>
-              </div>
+                        <div class="hidden md:flex items-center">
+                            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                                <ul class="flex items-center">
+                                    <a class="ml-5 " href="https://www.behance.net/uxrishu" target="_blank">
+                                        <span class=" text-xl"><i class="fa-brands fa-behance"></i></span>
+                                    </a>
+                                    <a class="ml-5 " href="https://www.linkedin.com/in/uxrishu/" target="_blank">
+                                        <span class="text-xl"><i class="fa-brands fa-linkedin-in"></i> </span>
+                                    </a>
+                                    <a class="ml-5 " href="https://github.com/uxrishu" target="_blank">
+                                        <span class=" text-xl"><i class="fa-brands fa-github"></i></span>
+                                    </a>
+                                </ul>
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Mobile menu button -->
+                    <div class="md:hidden flex items-center py-4 px-4">
+                        <button class="outline-none mobile-menu-button">
+                            <svg class=" w-10 h-12" style="color: #121117;" x-show="!showMenu" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
             </div>
-
-            <!-- Mobile menu button -->
-            <div class="md:hidden flex items-center py-4 px-4">
-              <button class="outline-none mobile-menu-button">
-                <svg
-                  class="w-10 h-12"
-                  style="color: #121117"
-                  x-show="!showMenu"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-              </button>
+            <!-- mobile menu -->
+            <div class="hidden mobile-menu">
+                <ul class="px-5 mobile-nav-items">
+                    <li class="active"><a href="index.html" class="caption m-2">Work</a></li>
+                    <li><a href="about.html" class="caption m-2 transition duration-300">About</a></li>
+                    <li><a href="contact.html" class="caption m-2 transition duration-300">Contact</a></li>
+                    <li><a href="https://www.behance.net/uxrishu" target="_blank"
+                            class="caption m-2 transition duration-300">Behance
+                            <i class="fa-solid fa-up-right-from-square"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/uxrishu/" target="_blank"
+                            class="caption m-2 transition duration-300">Linkedin <i
+                                class="fa-solid fa-up-right-from-square"></i></a></li>
+                    <li><a href="https://github.com/uxrishu" target="_blank"
+                            class="caption m-2 transition duration-300">Github <i
+                                class="fa-solid fa-up-right-from-square"></i></a></li>
+                </ul>
             </div>
-          </div>
-        </div>
-        <!-- mobile menu -->
-        <div class="hidden mobile-menu">
-          <ul class="px-5 mobile-nav-items">
-            <li class="active">
-              <a href="index.html" class="caption m-2">Work</a>
-            </li>
-            <li>
-              <a href="about.html" class="caption m-2 transition duration-300"
-                >About</a
-              >
-            </li>
-            <li>
-              <a href="contact.html" class="caption m-2 transition duration-300"
-                >Contact</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.behance.net/uxrishu"
-                target="_blank"
-                class="caption m-2 transition duration-300"
-                >Behance <i class="fa-solid fa-up-right-from-square"></i
-              ></a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/uxrishu/"
-                target="_blank"
-                class="caption m-2 transition duration-300"
-                >Linkedin <i class="fa-solid fa-up-right-from-square"></i
-              ></a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/uxrishu"
-                target="_blank"
-                class="caption m-2 transition duration-300"
-                >Github <i class="fa-solid fa-up-right-from-square"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+        </nav>
 
       <section class="body-font">
         <div
