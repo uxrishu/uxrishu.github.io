@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuel Your Body Case Study</title>
+
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/2921/2921822.png" />
+    <link rel="stylesheet" href="./style/style.css">
+
+    <!-- Scripting -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/df18b2a205.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-white text-gray-900 antialiased">
+    <div class="custom__cursor__outer"></div>
+    <div class="custom__cursor__inner"></div>
+    
+    <!-- Navigation -->
+    <nav class="">
+            <div class="mx-auto">
+                <div class="flex">
+                    <div class="flex wrapper justify-between px-4 py-4">
+                        <div class="hidden md:flex items-center space-x-1">
+                            <a href="index.html" class="caption py-4 px-2"><span>Work</span></a>
+                            <a href="about.html" class="caption py-4 px-2"><span>About</span></a>
+                            <a href="products.html" class="caption py-4 px-2"><span>Products</span></a>
+                            <a href="contact.html" class="caption py-4 px-2"><span>Contact</span></a>
+                        </div>
+
+                        <!-- Primary Navbar items -->
+              <!-- Centered logo -->
+              <div class="lg:absolute lg:left-1/2 transform-translate-x-1/2 md:relative">
+                <a href="index.html" class="flex items-center">
+                  <img src="./res/icons/logo.svg" alt="" draggable="false" />
+                </a>
+              </div>
+
+                        <div class="hidden md:flex items-center">
+                            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                                <ul class="flex items-center">
+                                    <a class="ml-5 " href="https://www.behance.net/uxrishu" target="_blank">
+                                        <span class=" text-xl"><i class="fa-brands fa-behance"></i></span>
+                                    </a>
+                                    <a class="ml-5 " href="https://www.linkedin.com/in/uxrishu/" target="_blank">
+                                        <span class="text-xl"><i class="fa-brands fa-linkedin-in"></i> </span>
+                                    </a>
+                                    <a class="ml-5 " href="https://github.com/uxrishu" target="_blank">
+                                        <span class=" text-xl"><i class="fa-brands fa-github"></i></span>
+                                    </a>
+                                </ul>
+                            </span>
+                        </div>
+                    </div>
+                    
+
+                    <!-- Mobile menu button -->
+                    <div class="md:hidden flex items-center py-4 px-4">
+                        <button class="outline-none mobile-menu-button">
+                            <svg class=" w-10 h-12" style="color: #121117;" x-show="!showMenu" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- mobile menu -->
+            <div class="hidden mobile-menu">
+                <ul class="px-5 mobile-nav-items">
+                    <li class="active"><a href="index.html" class="caption m-2">Work</a></li>
+                    <li><a href="about.html" class="caption m-2 transition duration-300">About</a></li>
+                    <li><a href="products.html" class="caption m-2 transition duration-300">Products</a></li>
+                    <li><a href="contact.html" class="caption m-2 transition duration-300">Contact</a></li>
+                    <li><a href="https://www.behance.net/uxrishu" target="_blank"
+                            class="caption m-2 transition duration-300">Behance
+                            <i class="fa-solid fa-up-right-from-square"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/uxrishu/" target="_blank"
+                            class="caption m-2 transition duration-300">Linkedin <i
+                                class="fa-solid fa-up-right-from-square"></i></a></li>
+                    <li><a href="https://github.com/uxrishu" target="_blank"
+                            class="caption m-2 transition duration-300">Github <i
+                                class="fa-solid fa-up-right-from-square"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+
+    <main class="wrapper pt-32 pb-20 px-6">
+        <!-- Hero Section -->
+        <section class="max-w-4xl mx-auto text-center mb-20">
+            <span class="inline-block py-1 px-3 rounded-full bg-green-50 text-green-700 text-xs font-bold tracking-widest mb-4 border border-green-100">UX CASE STUDY • 2025</span>
+            <h1 class="big-title mb-6">Fuel Your Body</h1>
+            <p class="subtitle max-w-2xl mx-auto">
+                Revitalizing a PEI-based meal subscription platform. We transformed a confusing one-time order process into a streamlined subscription model, increasing <span class="text-green-600 font-medium">Average Order Value by 246%</span> and reducing drop-off rates significantly.
+            </p>
+        </section>
+
+        <!-- Hero Image -->
+        <div class="w-full h-[60vh] md:h-[80vh] rounded-2xl overflow-hidden shadow-2xl mb-24 relative group">
+            <img class="w-full h-full object-cover transition transform duration-700 group-hover:scale-105" src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=2053&auto=format&fit=crop" alt="Healthy Meal Prep">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+            <div class="absolute bottom-10 left-10 text-white">
+                <p class="text-sm uppercase tracking-widest opacity-80 mb-2">Platform</p>
+                <h3 class="text-3xl font-serif">Shopify Custom Build</h3>
+            </div>
+        </div>
+
+        <!-- Project Overview Grid -->
+        <section class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-24 border-b border-gray-100 pb-24">
+            <div class="md:col-span-7 pr-8">
+                <h2 class="title text-3xl mb-6">The Challenge</h2>
+                <p class="subtitle mb-6">
+                    Fuel Your Body is a subscription-based meal platform for busy people in PEI, Canada. 
+                    We began working in January 2025 with a comprehensive audit, identifying a critical 63% drop-off rate. 
+                    Users were confused by the dual "One-Time Order" vs. "Subscription" model, and the brand value wasn't clearly articulated.
+                </p>
+                <p class="subtitle">
+                    Our goal was to optimize the UI/UX to highlight tiered offers (4, 6, 12 meals), clarify the value proposition, and improve the mobile experience where 75% of traffic originates.
+                </p>
+            </div>
+            <div class="md:col-span-5 bg-gray-50 p-8 rounded-xl border border-gray-100">
+                <h3 class="caption text-gray-400 mb-6">Project Details</h3>
+                <ul class="space-y-6">
+                    <li>
+                        <span class="block text-xs text-gray-500 uppercase tracking-wide mb-1">Role</span>
+                        <span class="font-serif text-xl">UX Researcher & Lead Designer</span>
+                    </li>
+                    <li>
+                        <span class="block text-xs text-gray-500 uppercase tracking-wide mb-1">Timeline</span>
+                        <span class="font-serif text-xl">Jan - Sept 2025</span>
+                    </li>
+                    <li>
+                        <span class="block text-xs text-gray-500 uppercase tracking-wide mb-1">Tools</span>
+                        <span class="text-gray-700">Clarity, Lucky Orange, Figma, Shopify</span>
+                    </li>
+                    <li>
+                        <span class="block text-xs text-gray-500 uppercase tracking-wide mb-1">Outcome</span>
+                        <span class="text-green-600 font-bold">Sales ↑ to $427k</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Key Metrics Bento Grid -->
+        <section class="mb-32">
+            <div class="text-center mb-12">
+                <h2 class="title text-3xl mb-4">Impact at a Glance</h2>
+                <p class="text-gray-500">Key performance indicators from Jan to Sept 2025</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <!-- Stat Card 1 -->
+                <div class="stat-card p-8 rounded-2xl bg-slate-900 text-white md:col-span-2 relative overflow-hidden">
+                    <div class="relative z-10">
+                        <div class="flex items-end gap-3 mb-2">
+                            <h3 class="text-5xl font-bold text-green-400">$520</h3>
+                            <span class="text-green-200 mb-2 font-medium">from $150</span>
+                        </div>
+                        <p class="text-gray-400">Average Order Value (AOV)</p>
+                    </div>
+                    <div class="absolute right-0 top-0 opacity-10 transform translate-x-10 -translate-y-10">
+                        <i class="fa-solid fa-arrow-trend-up text-9xl"></i>
+                    </div>
+                </div>
+
+                <!-- Stat Card 2 -->
+                <div class="stat-card p-8 rounded-2xl bg-gray-50 border border-gray-100 md:col-span-1">
+                    <h3 class="text-4xl font-bold text-gray-900 mb-2">350+</h3>
+                    <p class="text-sm text-gray-500 uppercase tracking-wider">Active Subscribers</p>
+                    <div class="mt-4 h-1 w-full bg-gray-200 rounded-full overflow-hidden">
+                        <div class="h-full bg-green-500 w-3/4"></div>
+                    </div>
+                    <p class="text-xs text-gray-400 mt-2">Up from 220 weekly</p>
+                </div>
+
+                <!-- Stat Card 3 -->
+                <div class="stat-card p-8 rounded-2xl bg-green-50 border border-green-100 md:col-span-1">
+                    <h3 class="text-4xl font-bold text-green-700 mb-2">12%</h3>
+                    <p class="text-sm text-green-800 uppercase tracking-wider">Drop-off Rate</p>
+                    <p class="text-xs text-green-600 mt-2">Down from 63%</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Strategy & Competitor Analysis -->
+        <section class="mb-32">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <span class="text-green-600 font-bold tracking-widest text-xs uppercase mb-2 block">Research Phase</span>
+                    <h2 class="title text-4xl mb-6">Redefining the Flow</h2>
+                    <p class="subtitle mb-6">
+                        We analyzed competitors like <strong>WeCook, HelloFresh, and Factor</strong>. 
+                        We noticed a pattern: successful platforms guide users through a structured funnel starting with the plan, then preferences, then payment, and finally meal selection.
+                    </p>
+                    <p class="subtitle">
+                        Our original flow asked users to choose "Weekly vs One Time" immediately, which created decision fatigue. We pivoted to a streamlined subscription-first model.
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100">
+                    <!-- Visual Flow Comparison -->
+                    <div class="mb-8">
+                        <h4 class="text-sm font-bold text-red-500 uppercase mb-4">Old Flow (High Friction)</h4>
+                        <div class="flex flex-wrap gap-4 items-center text-xs font-medium text-gray-500">
+                            <div class="flow-step bg-white px-3 py-2 border rounded shadow-sm">Weekly / One-Time</div>
+                            <div class="flow-step bg-white px-3 py-2 border rounded shadow-sm">Select Meals</div>
+                            <div class="flow-step bg-white px-3 py-2 border rounded shadow-sm">User Details</div>
+                            <div class="bg-white px-3 py-2 border rounded shadow-sm">Buy</div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-sm font-bold text-green-600 uppercase mb-4">New Flow (Streamlined)</h4>
+                        <div class="flex flex-wrap gap-4 items-center text-xs font-medium text-gray-900">
+                            <div class="flow-step bg-green-100 text-green-800 px-3 py-2 border border-green-200 rounded shadow-sm">Select Plan (4,6,12)</div>
+                            <div class="flow-step bg-white px-3 py-2 border rounded shadow-sm">Preferences</div>
+                            <div class="flow-step bg-white px-3 py-2 border rounded shadow-sm">Checkout</div>
+                            <div class="bg-white px-3 py-2 border rounded shadow-sm">Select Meals</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Design Showcase -->
+        <section class="mb-32">
+            <div class="text-center mb-16">
+                <h2 class="title text-4xl mb-4">Designed for Conversion</h2>
+                <p class="text-gray-500 max-w-2xl mx-auto">We focused on mobile optimization and clear value communication.</p>
+            </div>
+
+            <!-- Feature 1: Mobile First -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-24">
+                <div class="bg-gray-100 rounded-2xl p-12 flex justify-center items-center h-[500px]">
+                    <!-- Placeholder for Mobile Mockup -->
+                    <div class="w-[280px] h-[480px] bg-white rounded-[3rem] shadow-2xl border-8 border-gray-800 flex flex-col overflow-hidden relative">
+                         <div class="absolute top-0 w-full h-6 bg-gray-800 z-10"></div>
+                         <div class="w-full bg-green-600 h-32 flex flex-col justify-center px-6 text-white">
+                             <div class="text-xs opacity-80 mb-1">Plan Selection</div>
+                             <div class="font-bold text-lg">Build Your Plan</div>
+                         </div>
+                         <div class="p-4 space-y-3 bg-gray-50 flex-1">
+                             <div class="bg-white p-3 rounded-lg shadow-sm border border-green-500 flex justify-between items-center">
+                                 <div>
+                                     <div class="font-bold text-sm">6 Meals</div>
+                                     <div class="text-xs text-green-600">$12.49 / meal</div>
+                                 </div>
+                                 <div class="h-4 w-4 rounded-full bg-green-500"></div>
+                             </div>
+                             <div class="bg-white p-3 rounded-lg shadow-sm border border-gray-100 flex justify-between items-center opacity-60">
+                                 <div>
+                                     <div class="font-bold text-sm">12 Meals</div>
+                                     <div class="text-xs text-gray-500">$11.99 / meal</div>
+                                 </div>
+                                 <div class="h-4 w-4 rounded-full border border-gray-300"></div>
+                             </div>
+                         </div>
+                    </div>
+                </div>
+                <div class="pl-8">
+                    <h3 class="text-3xl font-serif mb-4">Mobile-First "Build Your Plan"</h3>
+                    <p class="subtitle mb-6">
+                        With <strong>75% of traffic coming from mobile</strong>, the plan selection page needed to be thumb-friendly. 
+                        We introduced clear tiered pricing cards:
+                    </p>
+                    <ul class="space-y-4 text-gray-600 font-medium">
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-check text-green-500"></i> 4 Meals @ $12.99
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-check text-green-500"></i> 6 Meals @ $12.49 (Most Popular)
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-check text-green-500"></i> 12 Meals @ $11.99 (Best Value)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Feature 2: Meal Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1 pr-8">
+                    <h3 class="text-3xl font-serif mb-4">Data-Rich Meal Cards</h3>
+                    <p class="subtitle mb-6">
+                        Users wanted to know what they were eating without clicking through multiple pages. 
+                        We upgraded the meal cards to display <strong>Calories, Carbs, Protein, and Fats</strong> instantly.
+                    </p>
+                    <p class="subtitle">
+                        This transparency built trust and sped up the selection process, directly contributing to the increased conversion rate.
+                    </p>
+                </div>
+                <div class="order-1 md:order-2 bg-green-50 rounded-2xl p-12 flex justify-center items-center h-[400px]">
+                    <!-- Placeholder for Meal Card UI -->
+                    <div class="bg-white p-4 rounded-xl shadow-xl w-64 transform rotate-3 hover:rotate-0 transition duration-500">
+                        <div class="h-32 bg-gray-200 rounded-lg mb-4 bg-[url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=1000&auto=format&fit=crop')] bg-cover bg-center"></div>
+                        <h4 class="font-bold text-lg mb-1">Keto Beef Bowl</h4>
+                        <div class="flex gap-2 text-[10px] text-gray-500 font-bold uppercase tracking-wider mb-3">
+                            <span class="bg-gray-100 px-2 py-1 rounded">500 cal</span>
+                            <span class="bg-gray-100 px-2 py-1 rounded">35g pro</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-green-600 font-bold">$12.49</span>
+                            <button class="bg-black text-white rounded-full w-6 h-6 flex items-center justify-center text-xs"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Results Table -->
+        <section class="bg-gray-900 text-white rounded-3xl p-12 md:p-20 shadow-2xl">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-serif text-white mb-6">The Business Impact</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Comparing performance before and after the redesign launch in March 2025.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center border-t border-gray-800 pt-12">
+                <div class="p-6">
+                    <p class="text-gray-500 text-sm uppercase tracking-widest mb-4">Total Sales</p>
+                    <div class="flex items-center justify-center gap-4">
+                        <span class="text-2xl text-gray-600 line-through">$243k</span>
+                        <i class="fa-solid fa-arrow-right text-gray-700"></i>
+                        <span class="text-4xl font-bold text-green-400">$427k</span>
+                    </div>
+                </div>
+                <div class="p-6 border-l border-r border-gray-800">
+                    <p class="text-gray-500 text-sm uppercase tracking-widest mb-4">Total Orders</p>
+                     <div class="flex items-center justify-center gap-4">
+                        <span class="text-2xl text-gray-600">3,077</span>
+                        <i class="fa-solid fa-arrow-right text-gray-700"></i>
+                        <span class="text-4xl font-bold text-white">5,071</span>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <p class="text-gray-500 text-sm uppercase tracking-widest mb-4">User Sessions</p>
+                     <div class="flex items-center justify-center gap-4">
+                        <span class="text-2xl text-gray-600">17k</span>
+                        <i class="fa-solid fa-arrow-right text-gray-700"></i>
+                        <span class="text-4xl font-bold text-white">30k</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-100 py-12">
+        <div class="wrapper px-6 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-6 md:mb-0">
+                <div class="text-2xl font-serif font-bold tracking-tight mb-2">
+                    JAMIE<span class="text-green-600">.</span>
+                </div>
+                <p class="text-gray-500 text-sm">© 2025 Fuel Your Body Case Study</p>
+            </div>
+            
+            <div class="flex space-x-6">
+                 <a href="mailto:hello@jamie.design" class="text-lg font-medium hover:text-green-600 transition">hello@jamie.design</a>
+            </div>
+
+            <div class="mt-6 md:mt-0 flex space-x-6 text-xl text-gray-400">
+                <a href="#" class="hover:text-green-600 transition"><i class="fa-brands fa-behance"></i></a>
+                <a href="#" class="hover:text-green-600 transition"><i class="fa-brands fa-github"></i></a>
+                <a href="#" class="hover:text-green-600 transition"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Custom Cursor Logic
+        const cursorOuter = document.querySelector(".custom__cursor__outer");
+        const cursorInner = document.querySelector(".custom__cursor__inner");
+        
+        if(window.matchMedia("(min-width: 768px)").matches && cursorOuter && cursorInner) {
+            window.addEventListener("mousemove", (e) => {
+                // Outer cursor follows with slight delay
+                cursorOuter.style.transform = `translate(${e.clientX - 20}px, ${e.clientY - 20}px)`;
+                cursorInner.style.transform = `translate(${e.clientX - 3}px, ${e.clientY - 3}px)`;
+            });
+            
+            document.querySelectorAll('a, button, .flow-step').forEach(el => {
+                el.addEventListener('mouseenter', () => {
+                    cursorOuter.classList.add('active');
+                    cursorOuter.style.transform = `translate(${cursorOuter.getBoundingClientRect().left}px, ${cursorOuter.getBoundingClientRect().top}px) scale(1.5)`;
+                });
+                el.addEventListener('mouseleave', () => {
+                    cursorOuter.classList.remove('active');
+                     cursorOuter.style.transform = `translate(${cursorOuter.getBoundingClientRect().left}px, ${cursorOuter.getBoundingClientRect().top}px) scale(1)`;
+                });
+            });
+        }
+    </script>
+</body>
+</html>
