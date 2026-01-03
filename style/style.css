@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "FontA";
   src: url("../res/Fonts/NeueMontreal-Regular.otf");
@@ -171,11 +172,8 @@ body {
 .box {
   width: auto;
   height: auto;
-  padding: 6px 15px;
-  border-radius: 70px;
-  border: 1px #2a25f3 solid;
-  background: #eaeafe;
-  color: #2a25f3;
+  color: #121117;
+  opacity: 0.4;
 }
 
 .icons {
@@ -236,7 +234,7 @@ body {
 }
 
 .big-title {
-  font-size: 56px;
+  font-size: 60px;
   line-height: 70px;
   font-family: "FontA";
 }
@@ -248,7 +246,6 @@ body {
 }
 
 .subtitle {
-  font-size: 20px;
   line-height: 38px;
   font-family: "FontB";
 }
@@ -258,9 +255,12 @@ body {
   font-family: "FontB";
   text-transform: uppercase;
   padding: 0.4em 1.2em;
-  background-color: #2a25f3;
+  background-color: rgba(46, 46, 46, 0.658);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   color: #ffffff;
   display: inline;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 24px;
 }
 
@@ -396,4 +396,136 @@ body {
   width: 240px;
   height: auto;
   margin: 0em 2.5em;
+}
+
+.big-title {
+  font-size: 3.2rem;
+  line-height: 1.1;
+  color: #121117;
+}
+
+@media (max-width: 768px) {
+  .big-title {
+    font-size: 2.5rem;
+  }
+}
+.subtitle {
+  font-size: 1.125rem;
+  color: #52525B;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.caption {
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.accent-color {
+  color: #16a34a; /* Green for Fuel Your Body brand */
+}
+
+.bg-accent-light {
+  background-color: #f0fdf4;
+}
+
+/* Custom Cursor */
+.custom__cursor__outer {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(22, 163, 74, 0.5);
+  border-radius: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: width 0.3s, height 0.3s, background-color 0.3s, transform 0.1s;
+  z-index: 9999;
+}
+
+.custom__cursor__inner {
+  width: 6px;
+  height: 6px;
+  background-color: #16a34a;
+  border-radius: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.custom__cursor__outer.active {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(22, 163, 74, 0.1);
+  border-color: transparent;
+}
+
+/* Layout Utilities from reference */
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Flow Chart Styling */
+.flow-step {
+  position: relative;
+}
+
+.flow-step:not(:last-child)::after {
+  content: "→";
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #cbd5e1;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .flow-step:not(:last-child)::after {
+    content: "↓";
+    right: 50%;
+    top: auto;
+    bottom: -25px;
+    transform: translateX(50%);
+  }
+}
+/* Card Hover Effects */
+.stat-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
+}
+
+/* Hide scrollbar for clean look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4d4d8;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1aa;
+}
+
+/* Ensure mobile cursor defaults back */
+@media (max-width: 768px) {
+  body {
+    cursor: auto;
+  }
+  .custom__cursor__outer, .custom__cursor__inner {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
