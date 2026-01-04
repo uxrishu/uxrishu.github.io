@@ -1,17 +1,19 @@
 @charset "UTF-8";
+
 @font-face {
   font-family: "FontA";
-  src: url("../res/Fonts/NeueMontreal-Regular.otf");
+  src: url("../res/Fonts/Product\ Sans\ Regular.ttf");
 }
+
 @font-face {
-  font-family: "FontB";
-  src: url("../res/Fonts/FontB.ttf");
+  font-family: "FontA";
+  src: url("../res/Fonts/Product\ Sans\ Regular.ttf");
 }
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 ::-moz-selection {
@@ -34,27 +36,21 @@
   color: #ffffff;
   z-index: 9999;
 }
+
 .preloader p {
   position: absolute;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  font-family: "FontB";
+  font-family: "FontA";
   top: 40%;
   left: 50%;
   transform: translate(-50%, 50%);
   font-size: 20px;
 }
 
-.wrapper {
-  max-width: 1300px;
-  width: 100%;
-  align-items: center;
-  margin: 0em auto;
-}
-
 body {
   color: #121117;
-  font-family: "FontB";
+  font-family: "FontA";
   overflow-x: hidden;
 }
 
@@ -72,7 +68,7 @@ body {
   background-color: #2a25f3;
   font-size: 14px;
   font-weight: bolder;
-  font-family: "FontB";
+  font-family: "FontA";
   text-transform: uppercase;
   letter-spacing: 0.3px;
   padding: 1.2em 2.6em;
@@ -88,7 +84,7 @@ body {
 
 .secondary-button {
   color: #2a25f3;
-  font-family: "FontB";
+  font-family: "FontA";
   font-size: 18px;
   font-weight: 600;
 }
@@ -100,7 +96,7 @@ body {
 .teritary-button {
   background-color: #ffffff;
   color: #2a25f3;
-  font-family: "FontB";
+  font-family: "FontA";
   font-size: 14px;
   font-weight: bolder;
   text-transform: uppercase;
@@ -132,25 +128,9 @@ body {
 
 .fa-brands:hover {
   transition: 300ms ease-out;
-  color: #2a25f3;
 }
 
-.hero-section {
-  grid-column-gap: 40px;
-  grid-row-gap: 25px;
-  flex-flow: column-reverse;
-  justify-content: space-between;
-  align-items: center;
-  height: auto;
-  padding-left: 20px;
-}
 
-.uxrishu-img {
-  width: 360px;
-  height: 360px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
 
 #myImg {
   width: 220px;
@@ -160,7 +140,7 @@ body {
 .service-subtitle {
   font-size: 18px;
   line-height: 26px;
-  font-family: "FontB";
+  font-family: "FontA";
 }
 
 .heading {
@@ -200,6 +180,7 @@ body {
   .last-cta-card {
     background-image: url("../res/images/Last CTA.png");
   }
+
   .last-cta-card .cta-detail {
     position: absolute;
     top: 25px;
@@ -207,18 +188,21 @@ body {
     right: 25px;
   }
 }
+
 @media only screen and (max-width: 767px) {
   .last-cta-card {
     background-image: url("../res/images/Last CTA mobile.png");
     width: 96%;
     margin: 0 auto;
   }
+
   .last-cta-card .cta-detail {
     position: absolute;
     top: 10px;
     left: 20px;
   }
 }
+
 .dot {
   width: 4px;
   height: 4px;
@@ -233,11 +217,7 @@ body {
   border-radius: 0 0 100px 0;
 }
 
-.big-title {
-  font-size: 60px;
-  line-height: 70px;
-  font-family: "FontA";
-}
+
 
 .title {
   font-size: 26px;
@@ -247,12 +227,12 @@ body {
 
 .subtitle {
   line-height: 38px;
-  font-family: "FontB";
+  font-family: "FontA";
 }
 
 .tags {
   font-size: 14px;
-  font-family: "FontB";
+  font-family: "FontA";
   text-transform: uppercase;
   padding: 0.4em 1.2em;
   background-color: rgba(46, 46, 46, 0.658);
@@ -264,20 +244,84 @@ body {
   border-radius: 24px;
 }
 
+
+/* Physics Footer Buttons */
+.physics-btn {
+  position: absolute;
+  /* Matter.js will control top/left */
+  background: #ffffff;
+  color: #000000;
+  padding: 20px 40px;
+  border-radius: 9999px;
+  font-family: inherit;
+  font-weight: 500;
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 24px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  z-index: 50;
+  /* Above the earth image */
+  transform-origin: center center;
+  will-change: transform, top, left;
+}
+
+.physics-btn i {
+  transform: none !important;
+  background: none !important;
+  padding: 0 !important;
+  color: inherit !important;
+  border-radius: 0 !important;
+}
+
+.physics-btn:hover {
+  background: #f0f0f0;
+}
+
+@media only screen and (max-width: 768px) {
+  .physics-btn {
+    padding: 12px 24px;
+    font-size: 16px;
+    gap: 8px;
+  }
+}
+
+#footer-physics-world {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  pointer-events: none;
+  /* Allow clicks to pass through empty space */
+}
+
+/* Ensure buttons catch pointer events */
+#footer-physics-world .physics-btn {
+  pointer-events: auto;
+  z-index: 30;
+  /* Higher than container */
+}
+
+
 .caption {
   font-size: 16px;
   letter-spacing: 0.8px;
-  font-family: "FontB";
+  font-family: "FontA";
   text-transform: uppercase;
 }
 
-.accent-col {
-  color: #2a25f3;
-}
+
 
 .show-at-small {
   display: none;
 }
+
 .show-at-small .small-box {
   background-color: rgba(32, 32, 184, 0.145);
 }
@@ -303,67 +347,64 @@ body {
 }
 
 @media only screen and (max-width: 930px) {
-  .big-title {
-    font-size: 42px;
-    line-height: 56px;
-  }
   .title {
     font-size: 20px;
     line-height: 32px;
   }
+
   .subtitle {
     font-size: 16px;
     line-height: 32px;
   }
+
   .tags {
     font-size: 10px;
     padding: 0.4em 1.2em;
   }
+
   .caption {
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 0.3px;
     word-spacing: 4px;
   }
+
   #uparrow {
     display: block;
   }
 }
+
 @media only screen and (max-width: 640px) {
-  .uxrishu-img {
-    width: 140px;
-    height: 140px;
-  }
-  .big-title {
-    font-size: 38px;
-    line-height: 50px;
-  }
   #footer .footer-logo {
     display: none;
   }
-  .custom__cursor__inner,
-  .custom__cursor__outer {
-    display: none;
-  }
+
+
+
   .prototype {
     display: none;
   }
+
   .show-at-small {
     display: block;
   }
+
   .show-at-small .small-box {
     background-color: rgba(32, 32, 184, 0.145);
   }
 }
+
 @media only screen and (max-width: 320px) {
   .big-title {
     font-size: 26px;
     line-height: 40px;
   }
+
   .name {
     font-size: 16px;
   }
 }
+
 .mobile-menu {
   color: #121117;
 }
@@ -376,39 +417,34 @@ body {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-80%);
   }
 }
+
 .slider {
   margin: 0.6em auto;
   overflow: hidden;
   position: relative;
   width: auto;
 }
+
 .slider .slide-track {
   animation: scroll 20s linear infinite;
   display: flex;
   width: 6000px;
   align-items: center;
 }
+
 .slider .slide {
   width: 240px;
   height: auto;
   margin: 0em 2.5em;
 }
 
-.big-title {
-  font-size: 3.2rem;
-  line-height: 1.1;
-  color: #121117;
-}
 
-@media (max-width: 768px) {
-  .big-title {
-    font-size: 2.5rem;
-  }
-}
+
 .subtitle {
   font-size: 1.125rem;
   color: #52525B;
@@ -424,47 +460,19 @@ body {
 }
 
 .accent-color {
-  color: #16a34a; /* Green for Fuel Your Body brand */
+  color: #16a34a;
+  /* Green for Fuel Your Body brand */
 }
 
 .bg-accent-light {
   background-color: #f0fdf4;
 }
 
-/* Custom Cursor */
-.custom__cursor__outer {
-  width: 40px;
-  height: 40px;
-  border: 1px solid rgba(22, 163, 74, 0.5);
-  border-radius: 50%;
-  position: fixed;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  transition: width 0.3s, height 0.3s, background-color 0.3s, transform 0.1s;
-  z-index: 9999;
-}
 
-.custom__cursor__inner {
-  width: 6px;
-  height: 6px;
-  background-color: #16a34a;
-  border-radius: 50%;
-  position: fixed;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  z-index: 9999;
-}
-
-.custom__cursor__outer.active {
-  width: 60px;
-  height: 60px;
-  background-color: rgba(22, 163, 74, 0.1);
-  border-color: transparent;
-}
 
 /* Layout Utilities from reference */
 .wrapper {
-  max-width: 1280px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 
@@ -492,6 +500,7 @@ body {
     transform: translateX(50%);
   }
 }
+
 /* Card Hover Effects */
 .stat-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -525,7 +534,218 @@ body {
   body {
     cursor: auto;
   }
-  .custom__cursor__outer, .custom__cursor__inner {
-    display: none;
+
+
+}
+
+/* New Red Heo Section Styles */
+.hero-red-bg {
+  background: #ED2228;
+  /* Fallback */
+  /* background: linear-gradient(108deg, #FF4545 0%, #ED2228 100%); */
+  position: relative;
+  border-radius: 20px;
+  /* Card aesthetic */
+  overflow: hidden;
+  color: white;
+}
+
+.glass-nav {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 0 40px;
+}
+
+@media (max-width: 768px) {
+  .glass-nav {
+    border-radius: 12px;
+    /* Reduced radius for mobile */
+    padding: 0 20px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/* Wavy Pattern SVG will be inline, but we can add animation or opacity here */
+.hero-pattern-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-content-z {
+  position: relative;
+  z-index: 10;
+}
+
+.hero-hire-btn {
+  background: white;
+  color: black;
+  padding: 12px 36px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hero-hire-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hero-resume-link {
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-left: 24px;
+  position: relative;
+  text-decoration: none;
+}
+
+.hero-resume-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: white;
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.hero-resume-link:hover::after {
+  transform: scaleX(0);
+}
+
+
+/* Mobile Marquee Styles */
+.mobile-marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.mobile-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: mobileScroll 30s linear infinite;
+  align-items: center;
+}
+
+.marquee-logo {
+  width: auto;
+  height: 40px;
+  /* Fixed height for uniformity */
+  margin: 0 1.5rem;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+@keyframes mobileScroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.location-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.stats-text {
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0.9;
+  font-weight: 400;
+  max-width: 220px;
+}
+
+/* Footer Earth Image Effect */
+/* Footer Earth Image Effect */
+.footer-earth-wrapper {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+  mix-blend-mode: screen;
+}
+
+.footer-earth-wrapper::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  width: 120%;
+  height: 80%;
+
+  /* Vibrant Purple / Violet atmosphere glow */
+  background: radial-gradient(ellipse at 50% 100%,
+      rgba(150, 50, 255, 0.5) 0%,
+      /* Bright Purple Core */
+      rgba(100, 0, 200, 0.3) 40%,
+      /* Deep Violet */
+      rgba(40, 0, 80, 0.1) 70%,
+      /* Fading Dark Purple */
+      transparent 90%);
+
+  filter: blur(40px);
+  z-index: 1;
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+
+.footer-earth-image {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transform: translateY(50%);
+  /* Start lower on mobile */
+  opacity: 1;
+  filter: contrast(1.2) brightness(1.3) saturate(1.2);
+  will-change: transform;
+}
+
+@media (min-width: 768px) {
+  .footer-earth-image {
+    transform: translateY(40%);
+    /* Raise slightly on desktop */
+  }
+}

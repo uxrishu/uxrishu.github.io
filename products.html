@@ -1,270 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Rishabh Singh - UI/UX Designer</title>
-    <meta charset="UTF-8" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rishabh Singh - UI/UX Designer in Delhi NCR</title>
-    <meta
-      name="description"
-      content="Rishabh Singh is a UI/UX Designer based in New Delhi, specializing in designing for eCommerce Brands."
-    />
 
-    <!-- Open Graph Meta Tags -->
-    <meta
-      property="og:title"
-      content="Rishabh Singh - UI/UX Designer in Delhi NCR"
-    />
-    <meta
-      property="og:description"
-      content="Rishabh Singh is a UI/UX Designer based in New Delhi, specializing in designing for eCommerce Brands."
-    />
-    <meta
-      property="og:image"
-      content="https://i.ibb.co/1Tdmbsx/OG-Tag-Image.jpg"
-    />
-    <!-- Replace with the URL to your image -->
-    <meta property="og:url" content="https://www.uxrishu.com" />
-    <!-- Replace with your website URL -->
-    <meta property="og:url" content="https://uxrishu.com/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="UXRISHU" />
+<head>
+  <title>Rishabh Singh - UI/UX Designer</title>
+  <meta charset="UTF-8" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rishabh Singh - UI/UX Designer in Delhi NCR</title>
+  <meta name="description"
+    content="Rishabh Singh is a UI/UX Designer based in New Delhi, specializing in designing for eCommerce Brands." />
 
-    <!-- Twitter Card Meta Tags (optional) -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="Rishabh Singh - UI/UX Designer in Delhi NCR"
-    />
-    <meta
-      name="twitter:description"
-      content="Rishabh Singh is a UI/UX Designer based in New Delhi, specializing in designing for eCommerce Brands."
-    />
-    <meta
-      name="twitter:image"
-      content="https://i.ibb.co/1Tdmbsx/OG-Tag-Image.jpg"
-    />
-    <!-- Replace with the URL to your image -->
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Rishabh Singh - UI/UX Designer in Delhi NCR" />
+  <meta property="og:description"
+    content="Rishabh Singh is a UI/UX Designer based in New Delhi, specializing in designing for eCommerce Brands." />
+  <meta property="og:image" content="https://i.ibb.co/1Tdmbsx/OG-Tag-Image.jpg" />
+  <!-- Replace with the URL to your image -->
+  <meta property="og:url" content="https://www.uxrishu.com" />
+  <!-- Replace with your website URL -->
+  <meta property="og:url" content="https://uxrishu.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="UXRISHU" />
 
-    <!-- Other meta tags and link tags -->
-    <meta
-      name="google-site-verification"
-      content="j5ZmpRp6-ZeLuTr-M8DbzuULJBChS9HBV_7bDVQt9u4"
-    />
+  <!-- Twitter Card Meta Tags (optional) -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Rishabh Singh - UI/UX Designer in Delhi NCR" />
+  <meta name="twitter:description"
+    content="Rishabh Singh is a UI/UX Designer based in New Delhi, specializing in designing for eCommerce Brands." />
+  <meta name="twitter:image" content="https://i.ibb.co/1Tdmbsx/OG-Tag-Image.jpg" />
+  <!-- Replace with the URL to your image -->
 
-    <!-- CSS -->
-    <link rel="icon" type="image/x-icon" href="./res/icons/Favicon.png" />
-    <link rel="stylesheet" href="./style/style.css" />
+  <!-- Other meta tags and link tags -->
+  <meta name="google-site-verification" content="j5ZmpRp6-ZeLuTr-M8DbzuULJBChS9HBV_7bDVQt9u4" />
 
-    <!-- Scripting -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script
-      src="https://kit.fontawesome.com/df18b2a205.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.js"
-      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-      crossorigin="anonymous"
-    ></script>
-  </head>
+  <!-- CSS -->
+  <link rel="icon" type="image/x-icon" href="./res/icons/Favicon.png" />
+  <link rel="stylesheet" href="./style/style.css" />
 
-  <body>
-    <div class="wrapper">
-      <nav class="">
-        <div class="mx-auto">
-          <div class="flex">
-            <div class="flex wrapper justify-between px-4 py-4">
-              <div class="hidden md:flex items-center space-x-1">
-                  <a href="index.html" class="caption py-4 px-2"><span>Work</span></a>
-                  <a href="about.html" class="caption py-4 px-2"><span>About</span></a>
-                  <a href="products.html" class="caption py-4 px-2"><span>Products</span></a>
-                  <a href="contact.html" class="caption py-4 px-2"><span>Contact</span></a>
-              </div>
+  <!-- Scripting -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/df18b2a205.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.0.45/dist/lenis.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const lenis = new Lenis({
+        duration: 1.2,
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+        direction: 'vertical',
+        gestureDirection: 'vertical',
+        smooth: true,
+        mouseMultiplier: 1,
+        smoothTouch: false,
+        touchMultiplier: 2,
+      });
 
-              <!-- Primary Navbar items -->
-              <!-- Centered logo -->
-              <div class="lg:absolute lg:left-1/2 transform-translate-x-1/2 md:relative">
-                <a href="index.html" class="flex items-center">
-                  <img src="./res/icons/logo.svg" alt="" draggable="false" />
-                </a>
-              </div>
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
 
-              <div class="hidden md:flex items-center">
-                  <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-                      <ul class="flex items-center">
-                          <a class="ml-5 " href="https://www.behance.net/uxrishu" target="_blank">
-                              <span class=" text-xl"><i class="fa-brands fa-behance"></i></span>
-                          </a>
-                          <a class="ml-5 " href="https://www.linkedin.com/in/uxrishu/" target="_blank">
-                              <span class="text-xl"><i class="fa-brands fa-linkedin-in"></i> </span>
-                          </a>
-                          <a class="ml-5 " href="https://github.com/uxrishu" target="_blank">
-                              <span class=" text-xl"><i class="fa-brands fa-github"></i></span>
-                          </a>
-                      </ul>
-                  </span>
-              </div>
-          </div>
+      requestAnimationFrame(raf);
+    });
+  </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+</head>
 
-            <!-- Mobile menu button -->
-            <div class="md:hidden flex items-center py-4 px-4">
-              <button class="outline-none mobile-menu-button">
-                <svg
-                  class="w-10 h-12"
-                  style="color: #121117"
-                  x-show="!showMenu"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-              </button>
+<body>
+  <div class="wrapper">
+    <div
+      class="hero-red-bg mx-0 mt-0 md:mx-[15px] md:mt-6 mb-12 pt-6 px-6 md:px-12 pb-6 relative overflow-hidden rounded-none md:rounded-[20px]">
+      <img src="./res/images/hero_pattern.png"
+        class="absolute inset-0 w-full h-full object-cover opacity-50 mix-blend-overlay pointer-events-none z-0"
+        alt="Pattern" />
+      <nav class="relative z-50 flex flex-wrap items-center justify-between mb-0 glass-nav py-4 md:py-5 w-full">
+        <!-- Desktop Nav -->
+        <div class="hidden md:flex items-center space-x-8 pl-4">
+          <a href="index.html"
+            class="text-white text-xs md:text-sm font-bold tracking-widest uppercase transition-colors group">
+            <div class="relative h-[16px] overflow-hidden">
+              <span class="block transition-transform duration-300 group-hover:-translate-y-full">Work</span>
+              <span
+                class="block absolute top-0 left-0 translate-y-full transition-transform duration-300 group-hover:translate-y-0">Work</span>
+            </div>
+          </a>
+          <a href="about.html"
+            class="text-white text-xs md:text-sm font-bold tracking-widest uppercase transition-colors group">
+            <div class="relative h-[16px] overflow-hidden">
+              <span class="block transition-transform duration-300 group-hover:-translate-y-full">About</span>
+              <span
+                class="block absolute top-0 left-0 translate-y-full transition-transform duration-300 group-hover:translate-y-0">About</span>
+            </div>
+          </a>
+          <a href="products.html"
+            class="text-white text-xs md:text-sm font-bold tracking-widest uppercase transition-colors group">
+            <div class="relative h-[16px] overflow-hidden">
+              <span class="block transition-transform duration-300 group-hover:-translate-y-full">Product</span>
+              <span
+                class="block absolute top-0 left-0 translate-y-full transition-transform duration-300 group-hover:translate-y-0">Product</span>
+            </div>
+          </a>
+
+        </div>
+        <!-- Desktop Logo (Centered) -->
+        <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2">
+          <a href="index.html">
+            <img src="./res/icons/logo.svg" alt="Logo"
+              class="h-8 w-auto brightness-0 invert opacity-90 hover:opacity-100 transition-opacity" />
+          </a>
+        </div>
+
+        <!-- Mobile Header -->
+        <div class="md:hidden flex items-center justify-between w-full px-4">
+          <a href="index.html" class="flex items-center">
+            <img src="./res/icons/logo.svg" alt="Logo"
+              class="h-6 w-auto brightness-0 invert opacity-90 hover:opacity-100 transition-opacity" />
+          </a>
+          <button class="outline-none mobile-menu-button text-white focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              viewBox="0 0 24 24" stroke="currentColor">
+              <path d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+        <!-- Desktop Social Icons -->
+        <div class="hidden md:flex items-center space-x-6 md:pr-4 text-white">
+          <a href="https://www.behance.net/uxrishu" target="_blank" class="transition-colors"><i
+              class="fa-brands fa-behance text-xl"></i></a>
+          <a href="https://www.linkedin.com/in/uxrishu/" target="_blank" class=" transition-colors"><i
+              class="fa-brands fa-linkedin-in text-xl"></i></a>
+          <a href="https://github.com/uxrishu" target="_blank" class="transition-colors"><i
+              class="fa-brands fa-github text-xl"></i></a>
+        </div>
+        <!-- Mobile Menu Dropdown -->
+        <div class="mobile-menu hidden w-full md:hidden mt-1 border-t border-white/20">
+          <div class="flex flex-col items-start pt-6 pb-2 pl-4 space-y-3">
+            <a href="index.html" class="text-white text-sm font-bold tracking-widest uppercase">Work</a>
+            <a href="about.html" class="text-white text-sm font-bold tracking-widest uppercase">About</a>
+            <a href="products.html" class="text-white text-sm font-bold tracking-widest uppercase">Product</a>
+
+            <div class="flex items-center space-x-6 pt-2 text-white pl-1">
+              <a href="https://www.behance.net/uxrishu" target="_blank"><i class="fa-brands fa-behance text-xl"></i></a>
+              <a href="https://www.linkedin.com/in/uxrishu/" target="_blank"><i
+                  class="fa-brands fa-linkedin-in text-xl"></i></a>
+              <a href="https://github.com/uxrishu" target="_blank"><i class="fa-brands fa-github text-xl"></i></a>
             </div>
           </div>
-        </div>
-        <!-- mobile menu -->
-        <div class="hidden mobile-menu">
-          <ul class="px-5 mobile-nav-items">
-            <li class="active">
-              <a href="index.html" class="caption m-2">Work</a>
-            </li>
-            <li>
-              <a href="about.html" class="caption m-2 transition duration-300"
-                >About</a
-              >
-            </li>
-            <li>
-              <a
-                href="products.html"
-                class="caption m-2 transition duration-300"
-                >Products</a
-              >
-            </li>
-            <li>
-              <a href="contact.html" class="caption m-2 transition duration-300"
-                >Contact</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.behance.net/uxrishu"
-                target="_blank"
-                class="caption m-2 transition duration-300"
-                >Behance <i class="fa-solid fa-up-right-from-square"></i
-              ></a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/uxrishu/"
-                target="_blank"
-                class="caption m-2 transition duration-300"
-                >Linkedin <i class="fa-solid fa-up-right-from-square"></i
-              ></a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/uxrishu"
-                target="_blank"
-                class="caption m-2 transition duration-300"
-                >Github <i class="fa-solid fa-up-right-from-square"></i
-              ></a>
-            </li>
-          </ul>
         </div>
       </nav>
+    </div>
 
-      <section class="body-font" id="work">
-        <div class="container px-5 lg:py-1 md:py-6 sm:py-12 mx-auto">
-          <div class="flex flex-wrap -m-4 justify-around">
-            <div class="lg:mt-10 md:mt-6 sm:mt-0 case-study p-6 md:w-1/2">
-              <div class="h-full overflow-hidden">
-                <img
-                  class="case-study-cover lg:h-auto md:h-64 w-full object-cover object-center"
-                  src="./res/images/resave.webp"
-                  alt="blog"
-                  draggable="false"
-                />
-                <div class="py-4">
-                  <h3 class="tracking-widest tags">Productivity Tool</h3>
-                  <h2 class="title mt-2">Resave - Organise your way</h2>
-                  <p class="leading-relaxed mb-3 subtitle">
-                    A web based tool, keep your important links handy with
-                    categorization according to you.
-                  </p>
-                  <div class="items-center">
-                    <a
-                      target="_blank"
-                      href="https://resave.uxrishu.com/"
-                      class="mt-2 inline-flex items-center md:mb-2 lg:mb-0 secondary-button"
-                      >Visit Resave
-                      <svg
-                        class="w-4 h-4 ml-2"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        fill="none"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <path d="M5 12h14"></path>
-                        <path d="M12 5l7 7-7 7"></path>
-                      </svg>
-                    </a>
-                  </div>
+    <section class="body-font" id="work">
+      <div class="container px-5 lg:py-1 md:py-6 sm:py-12 mx-auto">
+        <div class="flex flex-wrap -m-4 justify-around">
+          <div class="lg:mt-10 md:mt-6 sm:mt-0 case-study p-6 md:w-1/2">
+            <div class="h-full overflow-hidden">
+              <img class="case-study-cover lg:h-auto md:h-64 w-full object-cover object-center"
+                src="./res/images/resave.webp" alt="blog" draggable="false" />
+              <div class="py-4">
+                <h3 class="tracking-widest tags">Productivity Tool</h3>
+                <h2 class="title mt-2">Resave - Organise your way</h2>
+                <p class="leading-relaxed mb-3 subtitle">
+                  A web based tool, keep your important links handy with
+                  categorization according to you.
+                </p>
+                <div class="items-center">
+                  <a target="_blank" href="https://resave.uxrishu.com/"
+                    class="mt-2 inline-flex items-center md:mb-2 lg:mb-0 secondary-button group">
+                    <div class="relative h-[24px] overflow-hidden flex items-center">
+                      <span class="block transition-transform duration-300 group-hover:-translate-y-full">Visit
+                        Resave</span>
+                      <span
+                        class="block absolute top-0 left-0 translate-y-full transition-transform duration-300 group-hover:translate-y-0">Visit
+                        Resave</span>
+                    </div>
+                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M5 12h14"></path>
+                      <path d="M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="lg:mt-10 md:mt-6 sm:mt-0 case-study p-6 md:w-1/2">
-              <div class="h-full overflow-hidden">
-                <img
-                  class="case-study-cover lg:h-auto md:h-64 w-full object-cover object-center"
-                  src="./res/images/Gecom Marketplace.webp"
-                  alt="blog"
-                  draggable="false"
-                />
-                <div class="py-4">
-                  <h3 class="tracking-widest tags">Marketplace</h3>
-                  <h2 class="title mt-2">Gecom 2.0</h2>
-                  <p class="leading-relaxed mb-3 subtitle">
-                    A website built on Django that serves as a marketplace for
-                    cloud gaming and custom server hosting from multiple vendors
-                    and publishers.
-                  </p>
-                  <div class="items-center">
-                    <a
-                      target="_blank"
-                      href="https://gecom.alexdeathway.me"
-                      class="mt-2 inline-flex items-center md:mb-2 lg:mb-0 secondary-button"
-                      >Visit Gecom
-                      <svg
-                        class="w-4 h-4 ml-2"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        fill="none"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <path d="M5 12h14"></path>
-                        <path d="M12 5l7 7-7 7"></path>
-                      </svg>
-                    </a>
-                  </div>
+          <div class="lg:mt-10 md:mt-6 sm:mt-0 case-study p-6 md:w-1/2">
+            <div class="h-full overflow-hidden">
+              <img class="case-study-cover lg:h-auto md:h-64 w-full object-cover object-center"
+                src="./res/images/Gecom Marketplace.webp" alt="blog" draggable="false" />
+              <div class="py-4">
+                <h3 class="tracking-widest tags">Marketplace</h3>
+                <h2 class="title mt-2">Gecom 2.0</h2>
+                <p class="leading-relaxed mb-3 subtitle">
+                  A website built on Django that serves as a marketplace for
+                  cloud gaming and custom server hosting from multiple vendors
+                  and publishers.
+                </p>
+                <div class="items-center">
+                  <a target="_blank" href="https://gecom.alexdeathway.me"
+                    class="mt-2 inline-flex items-center md:mb-2 lg:mb-0 secondary-button group">
+                    <div class="relative h-[24px] overflow-hidden flex items-center">
+                      <span class="block transition-transform duration-300 group-hover:-translate-y-full">Visit
+                        Gecom</span>
+                      <span
+                        class="block absolute top-0 left-0 translate-y-full transition-transform duration-300 group-hover:translate-y-0">Visit
+                        Gecom</span>
+                    </div>
+                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M5 12h14"></path>
+                      <path d="M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
+  </div>
 
-    <script src="./script/script.js"></script>
-  </body>
+  <footer class="mt-20 mb-0 md:mb-8 mx-0 md:mx-[15px]">
+    <div
+      class="bg-[#121212] text-white rounded-none md:rounded-[30px] p-8 md:p-12 lg:p-16 relative overflow-hidden min-h-[600px] md:min-h-0">
+
+      <!-- Top Section -->
+      <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center relative z-10">
+        <!-- Left Content -->
+        <div class="max-w-2xl w-full">
+          <h2 class="text-4xl md:text-5xl lg:text-7xl font-medium mb-8 leading-16 tracking-tight"
+            style="line-height: 1.3;">
+            Ready to begin?<br /> Let's talk!
+          </h2>
+          <!-- Original Buttons Removed for Physics Effect -->
+        </div>
+      </div>
+
+      <!-- Physics World Container -->
+      <div id="footer-physics-world"></div>
+
+      <!-- Spacer -->
+      <div class="h-16 md:h-24"></div>
+
+      <!-- Bottom Section -->
+      <div class="absolute bottom-0 left-0 right-0 z-30 px-8 md:px-12 lg:px-16 pb-8 md:pb-12 lg:pb-16">
+        <div
+          class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-end md:items-end gap-4 md:gap-0">
+          <p class="text-gray-500 text-sm md:text-base order-2 md:order-1 w-full md:w-auto text-left">
+            Crafted by me in 2026
+          </p>
+          <!-- Links removed for Physics Effect -->
+        </div>
+      </div>
+
+      <!-- Earth Visual Effect -->
+      <div class="footer-earth-wrapper">
+        <img src="./res/images/footer_earth_horizon_purple.png" alt="Earth Horizon" class="footer-earth-image">
+      </div>
+
+    </div>
+  </footer>
+  <script src="./script/script.js"></script>
+  <script src="./script/footer_physics.js"></script>
+  <script>
+    // Initialize Footer Physics only on this page
+    document.addEventListener('DOMContentLoaded', () => {
+      if (typeof initFooterPhysics === 'function') {
+        initFooterPhysics();
+      }
+    });
+  </script>
+</body>
+
 </html>
